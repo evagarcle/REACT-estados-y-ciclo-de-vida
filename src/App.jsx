@@ -1,15 +1,18 @@
-import { useState } from 'react'
+
 import './App.css'
+import Counter from './components/Counter/Counter'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  
 
   return (
   
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}> </button>
-        <span>{count}</span>
-        <button onClick={() => setCount((count) => count - 1)}> </button>
+        
+        <Counter initialState={10}/>
+      
        
       </div>
       
